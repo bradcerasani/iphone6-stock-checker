@@ -8,11 +8,16 @@ You'll need a username and host registered with your Hue bridge in order to upda
 
 If you don't have Phillips Hue bulbs, remove the api references and customize the `success()` function to notify you as you wish.
 
+### Clone it
+
+```bash
+git clone https://github.com/bradcerasani/iphone6-stock-checker.git
+cd iphone6-stock-checker
+```
+
 ### Run it
 
 ```js
-git clone https://github.com/bradcerasani/iphone6-stock-checker.git
-cd iphone6-stock-checker
 npm install
 node app.js
 ```
@@ -21,8 +26,6 @@ With [PM2](https://github.com/Unitech/pm2) for better process management:
 
 ```js
 npm install pm2 -g
-git clone https://github.com/bradcerasani/iphone6-stock-checker.git
-cd iphone6-stock-checker
 npm install
 pm2 start app.js
 ```
