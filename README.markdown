@@ -8,7 +8,7 @@ You'll need a username and host registered with your Hue bridge in order to upda
 
 If you don't have Phillips Hue bulbs, remove the api references and customize the `success()` function to notify you as you wish.
 
-Requires [Node.js](http://nodejs.org/);
+Requires [Node.js](http://nodejs.org/).
 
 ### Clone it
 
