@@ -76,14 +76,16 @@ function checkAvailability() {
     }
 
     res.on('data', function(d) {
-      var obj;
+      var obj, isEmpty;
+
       try {
         obj = JSON.parse(d);
+        isEmpty = Object.keys(obj).length === 0;
       } catch(e) {
         displayError(e);
       }
 
-      if (typeof obj !== 'undefined' && obj[store][model] === true) {
+      if (typeof obj !== 'undefined' && !isEmpty && obj[store][model]) {
         success();
       } else {
         var time = getDateTime();
